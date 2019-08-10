@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jquery - Selectores</title>
+
+    <!-- all styles here -->
+    <link href="./estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="borde-rojo">
+      <h1>Hola mundo!</h1>
+      <p id="sub-titulo">Este es un parrafo</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        // console.log("Hola desde jQuery!");
+
+        // obtener todos los elementos del dom (*)
+        let allDomElements = $("*");
+        // console.log(allDomElements);
+
+        let getElementsByClass = $(".borde-rojo");
+        // console.log(getElementsByClass);
+
+        // accder a los elemntos h1
+        let getByTagname = $("h1");
+        // console.log(getByTagname);
+
+        let getElementByIdSubTitulo = $("#sub-titulo");
+        // console.log(getElementByIdSubTitulo);
+
+        
+      });
+    </script>
+  </body>
+</html>
